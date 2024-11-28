@@ -31,3 +31,16 @@ services:
       - db-postgres
     ports:
       - 80:80
+
+  frontend:
+    restart: always
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    env_file:
+      - "./.env.dev"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
