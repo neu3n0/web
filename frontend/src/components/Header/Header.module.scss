@@ -1,0 +1,33 @@
+.header {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #C80113;
+}
+
+.logo {
+    display: flex; // для заглушки
+    align-items: center; // для заглушки
+    justify-content: center; // для заглушки
+    width: 200px;
+    background-color: white;
+}
+
+.header_container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    color: white
+}
+
+.kek {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 8%; // на мобилки переписать
+}
+
+.kek:hover {
+    background: #DE1C1F;
+}
